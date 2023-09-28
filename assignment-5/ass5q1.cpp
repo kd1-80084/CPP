@@ -17,7 +17,6 @@ private:
     string name;
     string gender;
     float *marks;
-
 public:
     Student()
     {
@@ -72,7 +71,6 @@ public:
     friend void searchRecords();
     friend void sortRecords();
 };
-
 void searchRecords(Student s[])
 {
     int key;
@@ -86,7 +84,6 @@ void searchRecords(Student s[])
             cout<<"rollno not found"<<endl;
     }
 }
-
 void sortRecords(Student s[])
 {
     Student temp;
@@ -99,8 +96,6 @@ void sortRecords(Student s[])
                 temp = s[i];
                 s[i] = s[j];
                 s[j] = temp;
-                // s[i].getRollno()=s[j].getRollno();
-                // s[j].getRollno()=temp;
             }
         }
     }
@@ -113,7 +108,6 @@ enum Emenu
     RECORDS_SORTING,
     PRINT_DATA
 };
-
 Emenu menu()
 {
     int choice;
@@ -166,10 +160,3 @@ int main()
     }
     return 0;
 }
-
-
-
-
-
-
-
